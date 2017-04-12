@@ -1,0 +1,25 @@
+{
+  "name": "react-playground",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/neo-yuanyanjun/react-playground.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/neo-yuanyanjun/react-playground/issues"
+  },
+  "homepage": "https://github.com/neo-yuanyanjun/react-playground#readme",
+  "dependencies": {
+    "express": "^4.15.2",
+    "react": "^15.5.4",
+    "react-redux": "^5.0.4",
+    "react-router": "^4.1.0"
+  }
+}
