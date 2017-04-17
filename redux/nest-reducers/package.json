@@ -1,0 +1,21 @@
+{
+  "name": "nest-reducers",
+  "version": "1.0.0",
+  "description": "reducers 嵌套",
+  "main": "''",
+  "dependencies": {
+    "babel-core": "^6.24.1",
+    "babel-loader": "^6.4.1",
+    "babel-polyfill": "^6.23.0",
+    "redux": "^3.6.0",
+    "webpack": "^2.4.1",
+    "webpack-dev-server": "^2.4.2"
+  },
+  "devDependencies": {
+    "babel-preset-es2015": "^6.24.1"
+  },
+  "scripts": {
+    "dev": "webpack-dev-server -d --progress --profile --colors --hot --inline --history-api-fallback",
+    "build": "webpack --config webpack.config.production.js --progress --profile --colors"
+  }
+}
