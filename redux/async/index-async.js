@@ -2,10 +2,11 @@ var redux = require('redux');
 var reduxThunk = require('redux-thunk').default;
 
 var createStore = redux.createStore;
-svar applyMiddleware = redux.applyMiddleware;
+var applyMiddleware = redux.applyMiddleware;
 var compose = redux.compose;
 
 var m1 = store => next => action => {
+  console.log('store.getState: ', store.getState())
   console.log('m1 - 1');
   console.log('m1 - 2', next(action));
   console.log('m1 - 3');
@@ -34,9 +35,9 @@ var m4 = store => next => action => {
   });
 };
 
-function reduce(state, action) {
+function reduce(state = {defaultData: 'defaultData'}, action) {
   console.log('reduce')
-  return {};
+  return state;
 }
 
 var store = applyMiddleware(reduxThunk, m1, m2, m3)(createStore)(reduce);
